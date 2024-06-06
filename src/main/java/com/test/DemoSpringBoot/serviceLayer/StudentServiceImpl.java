@@ -11,11 +11,13 @@ import com.test.DemoSpringBoot.repository.StudentRepo;
 @Service
 public class StudentServiceImpl {
 	
+
 	@Autowired
 	private StudentRepo repo;
 
 	public List<Student> getDetails() {
 		// TODO Auto-generated method stub
+		System.out.println("hello");
 		return repo.findAll();
 	}
 
