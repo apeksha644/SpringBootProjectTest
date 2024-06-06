@@ -22,7 +22,7 @@ public class StudentController {
 	private StudentServiceImpl serviceImpl;
 	
 	
-	@GetMapping("/getDetails")
+	@GetMapping("/addDetails")
 	public List<Student> getDetails() {
 		return serviceImpl.getDetails();
 	}
